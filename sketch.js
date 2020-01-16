@@ -1,4 +1,4 @@
-var ship;
+let ship;
 
 function setup ()  {
     createCanvas (windowWidth, windowHeight);
@@ -11,22 +11,23 @@ function draw() {
 }
 
 
-function ship()  {
+function Ship()  {
     this.pos = createVector(width/2, height/2);
     this.r = 20;
     this.heading = PI / 2;
 
     this.render = function()  {
         translate(this.pos.x, this.pos.y);
-        DeviceRotationRate(this.heading);
+        rotate(this.heading);
         noFill();
         stroke(255);
         triangle(-this.r, this.r, this.r, this.r, 0, -this.r)
     }
 
-    this.turn = funtion(angle){
-        heading += angle;
+    this.turn = function(angle) {
+        this.heading += angle;
+    
+    }
 
 }
 
-}

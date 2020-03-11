@@ -1,7 +1,9 @@
+//Det her er vores variabler for skibet, laserne or asteroiderne
 let ship;
 let asteroids = [];
 let lasers = [];
 
+//Det her er vores setup
 function setup() { 
   createCanvas(windowWidth, windowHeight);
   ship = new Ship();

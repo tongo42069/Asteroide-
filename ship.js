@@ -33,6 +33,10 @@ function Ship() {
     }
   }
   
+  //Her ved this.render tegner vi skibet. 
+  //Vi bruger Triangle funktionen til at tegne et skib med nogle forskellige positioner som er this.r, -this.r og 0.
+  //Fordi vi bruger fill(0) bliver skibet(trekanten) ikke fyldt ud med nogen farve. 
+  //Stroke lægger en farve rundt om trekanten
   this.render = function() {
     push();
     translate(this.pos.x, this.pos.y);
